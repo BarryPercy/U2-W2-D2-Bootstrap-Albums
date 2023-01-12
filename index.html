@@ -11,25 +11,25 @@
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#fav-albums">Favourite Albums</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#album-review">Album Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#worst-albums">Worst Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tapestry">Tapestry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Footer</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#fav-albums">Favourite Albums</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#album-review">Album Review</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#worst-albums">Worst Albums</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tapestry">Tapestry</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#footer">Footer</a>
-                </li>
-              </ul>
-          </nav>
+        </nav>
         
         <div class="container">
             <div class="jumbotron">
@@ -64,98 +64,200 @@
                             <p class="card-text">Eminem</p>
                             <p class="card-text">1:17:00</p>
                             <p class="card-text">Rap</p>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Song Title</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Curtains Up - Skit</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>White America</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Business</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Cleanin' Out My Closet</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Square Dance</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>The Kiss - Skit</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">7</th>
-                                        <td>Soldier</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">8</th>
-                                        <td>Say Goodbye Hollywood</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">9</th>
-                                        <td>Drips</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">10</th>
-                                        <td>Without Me</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">11</th>
-                                        <td>Paul Rosenberg - Skit</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">12</th>
-                                        <td>Sing For The Moment</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">13</th>
-                                        <td>Superman</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">14</th>
-                                        <td>Hailie's Song</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">15</th>
-                                        <td>Steve Berman - Skit</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">16</th>
-                                        <td>When The Music Stops</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">17</th>
-                                        <td>Say What You Say</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">18</th>
-                                        <td>Till I Collapse</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">19</th>
-                                        <td>My Dad's Gone Crazy</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">20</th>
-                                        <td>Curtains Close</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Song Title</th>
+                                    <th scope="col">Artist</th>
+                                    <th scope="col">Duration</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Curtains Up - Skit</td>
+                                    <td>Eminem</td>
+                                    <td>0:29</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>White America</td>
+                                    <td>Eminem</td>
+                                    <td>5:24</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Business</td>
+                                    <td>Eminem</td>
+                                    <td>4:11</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Cleanin' Out My Closet</td>
+                                    <td>Eminem</td>
+                                    <td>4:57</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Square Dance</td>
+                                    <td>Eminem</td>
+                                    <td>5:23</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>The Kiss - Skit</td>
+                                    <td>Eminem</td>
+                                    <td>1:15</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Soldier</td>
+                                    <td>Eminem</td>
+                                    <td>3:46</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Say Goodbye Hollywood</td>
+                                    <td>Eminem</td>
+                                    <td>4:32</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Drips</td>
+                                    <td>Eminem</td>
+                                    <td>4:45</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>4:50</td>
+                                    <td>Eminem</td>
+                                    <td>0:46</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>Paul Rosenberg - Skit</td>
+                                    <td>Eminem</td>
+                                    <td>0:22</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>Sing For The Moment</td>
+                                    <td>Eminem</td>
+                                    <td>5:39</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>Superman</td>
+                                    <td>Eminem</td>
+                                    <td>5:50</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14</th>
+                                    <td>Hailie's Song</td>
+                                    <td>Eminem</td>
+                                    <td>5:20</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">15</th>
+                                    <td>Steve Berman - Skit</td>
+                                    <td>Eminem</td>
+                                    <td>0:33</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">16</th>
+                                    <td>When The Music Stops</td>
+                                    <td>Eminem</td>
+                                    <td>4:29</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">17</th>
+                                    <td>Say What You Say</td>
+                                    <td>Eminem</td>
+                                    <td>5:09</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">18</th>
+                                    <td>Till I Collapse</td>
+                                    <td>Eminem</td>
+                                    <td>4:57</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">19</th>
+                                    <td>My Dad's Gone Crazy</td>
+                                    <td>Eminem</td>
+                                    <td>4:27</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">20</th>
+                                    <td>Curtains Close</td>
+                                    <td>Eminem</td>
+                                    <td>1:01</td>
+                                    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+                                </tr>
+                                </tbody>
+                                
+                            </table>
+
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn-primary btn-shadow" data-toggle="modal" data-target="#myModal">Add Track</button>
                             </div>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Add Track</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <p>Track Number:</p>
+                                                <input type="text" name="track_number" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <p>Track Title:</p>
+                                                <input type="text" name="track_title" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <p>Artist Name:</p>
+                                                <input type="text" name="artist_name" required>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <p>Track Duration:</p>
+                                                <input type="text" name="track_duration" required>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" onclick="addTrack()">Add</button>
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>  
                     
                     </div>
@@ -179,9 +281,11 @@
         <hr>
         <footer class="mastfoot mt-auto text-center" id="footer">
             <div class="inner">
-              <p>Made using <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/BazzerPercy">@BazzerPercy</a>.</p>
+                <p>Made using <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/BazzerPercy">@BazzerPercy</a>.</p>
             </div>
-          </footer>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         <script src="assets/js/scripts.js"></script>
     </body>
 </html>

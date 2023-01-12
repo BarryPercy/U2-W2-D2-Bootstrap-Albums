@@ -23,7 +23,7 @@ favouriteAlbums =[
     {
         "album": "BALLADS1",
         "artist": "Joji",
-        "genre": "R&B - lo-fi - downtempo",
+        "genre": "R&B - Lo-Fi - Downtempo",
         "duration": "35:11",
         "coverimage": "assets/images/ballads1.png"
     },
@@ -145,12 +145,11 @@ function createTopCards(){
         topCards.innerHTML+=`<div class="col-lg-3 col-md-4 col-6">
         <div class="card">
             <img src=${favouriteAlbums[i].coverimage} class="card-img-top" alt="...">
-            <img class="genre-badge" src="./logo/prime.svg">
+            <div class="genre-badge""><p>${favouriteAlbums[i].genre}</p></div>
             <div class="">
                 <div class="card-body">
                     <h5 class="card-title text-center">${favouriteAlbums[i].album}</h5>
                     <p class="card-text">${favouriteAlbums[i].artist}</p>
-                    <p class="card-text">${favouriteAlbums[i].genre}</p>
                     <p class="card-text">${favouriteAlbums[i].duration}</p>
                 </div>  
             </div>
@@ -182,6 +181,26 @@ function createTapestry(){
             <img src=${tapestry[i]} class="card-img-top" alt="...">
          </div>`
     }
+}
+
+function deleteParent(button){
+    button.parentNode.parentNode.remove();
+}
+
+let numberOfRows = document.querySelectorAll('tr').length -1;
+let values;
+let table = document.querySelector("table");
+function addTrack(){
+    values = document.querySelectorAll("form .row div input")
+    let tr = document.createElement("tr");
+    tr.innerHTML=`
+    <th scope="row">${values[0].value}</th>
+    <td>${values[1].value}</td>
+    <td>${values[2].value}</td>
+    <td>${values[3].value}</td>
+    <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
+    `
+    table.appendChild(tr);
 }
 
 window.onload = function(){
