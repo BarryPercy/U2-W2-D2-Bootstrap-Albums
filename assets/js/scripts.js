@@ -188,10 +188,10 @@ function deleteParent(button){
 }
 
 let numberOfRows = document.querySelectorAll('tr').length -1;
-let values;
 let table = document.querySelector("table");
+let values;
 function addTrack(){
-    values = document.querySelectorAll("form .row div input")
+    values = document.querySelectorAll(".input-group .row div input")
     let tr = document.createElement("tr");
     tr.innerHTML=`
     <th scope="row">${values[0].value}</th>
@@ -201,6 +201,10 @@ function addTrack(){
     <td><button type="button" class="btn btn-danger" onclick="deleteParent(this)">Delete</button></td>
     `
     table.appendChild(tr);
+    alert(values[1].value);
+    for(let i=0;i<values.length;i++){
+        values[i].value="";
+    }
 }
 
 window.onload = function(){

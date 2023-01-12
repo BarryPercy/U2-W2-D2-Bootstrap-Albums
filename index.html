@@ -231,26 +231,29 @@
                                         <span aria-hidden="true">&times;</span>
                                       </button>
                                     </div>
-                                    <form>
+                                    <div class="input-group">
                                         <div class="row">
                                             <div class="col-12 col-lg-6">
                                                 <p>Track Number:</p>
-                                                <input type="text" name="track_number" required>
+                                                <input type="text" class="form-control" placeholder="Track Number" aria-label="track-number" aria-describedby="basic-addon1">
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <p>Track Title:</p>
-                                                <input type="text" name="track_title" required>
+                                                <input type="text" class="form-control" placeholder="Track Title" aria-label="track-title" aria-describedby="basic-addon1">
+                                            
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <p>Artist Name:</p>
-                                                <input type="text" name="artist_name" required>
+                                                <input type="text" class="form-control" placeholder="Artist Name" aria-label="artist-name" aria-describedby="basic-addon1">
+                                            
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <p>Track Duration:</p>
-                                                <input type="text" name="track_duration" required>
+                                                <input type="text" class="form-control" placeholder="Track Duration" aria-label="track-duration" aria-describedby="basic-addon1">
+                                            
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-primary" onclick="addTrack()">Add</button>
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
