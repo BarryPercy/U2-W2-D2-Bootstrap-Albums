@@ -145,6 +145,7 @@ function createTopCards(){
         topCards.innerHTML+=`<div class="col-lg-3 col-md-4 col-6">
         <div class="card">
             <img src=${favouriteAlbums[i].coverimage} class="card-img-top" alt="...">
+            <img class="genre-badge" src="./logo/prime.svg">
             <div class="">
                 <div class="card-body">
                     <h5 class="card-title text-center">${favouriteAlbums[i].album}</h5>
